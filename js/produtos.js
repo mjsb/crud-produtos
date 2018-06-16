@@ -25,7 +25,9 @@ $(document).ready(function () {
              case "1":
                 $(".mensagem").html("<h5>Produto editado com sucesso!</h5>");
                 openModal('#mensagem',1);
-                $(window.document.location).attr("href","listar.php");
+                setTimeout(function() {
+                    $(window.document.location).attr("href","listar.php");
+                }, 2500);
                 break;
 
              case "2":
